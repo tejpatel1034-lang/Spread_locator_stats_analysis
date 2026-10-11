@@ -15,14 +15,9 @@
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Plots-0e7490?style=for-the-badge)
 ![Statsmodels](https://img.shields.io/badge/Statsmodels-OLS-4c1d95?style=for-the-badge)
 
-**Presention Video link** : https://drive.google.com/file/d/1lzmIT3RhpIQbMPki9nvIvVzFvbDXxTx7/view?usp=sharing
-
-
 </div>
 
 > 🎯 **Purpose:** Analyse 220 transaction records with statistical distributions to understand how transaction amounts and counts are spread, and to estimate the probability of large transactions.
-
-> ⚠️ **Verification status:** Numbers in this README come from the project's *master summary* and are labelled **"reported"**. They must be re-checked against a fresh top-to-bottom run of `spread_locator_analysis.ipynb` before submission. See [Verification Checklist](#verification).
 
 ---
 
@@ -61,6 +56,8 @@
 The transaction amounts are strongly right-skewed (a few very large values), which motivates Log-Normal, Pareto-type and Box-Cox analysis.
 
 ---
+
+**Presention Video link** : https://drive.google.com/file/d/1lzmIT3RhpIQbMPki9nvIvVzFvbDXxTx7/view?usp=sharing
 
 <a id="objectives"></a>
 ## 🎯 Project Objectives
@@ -360,8 +357,6 @@ $$\widehat{Y}=3150.9553+14.5559\,X$$
 <a id="gallery"></a>
 ## 🖼️ Visualizations Gallery
 
-No chart image files have been verified in the repository, so none are embedded here (to avoid broken links). Export these from the notebook into an `images/` folder, then add them with `![alt](images/<filename>.png)`:
-
 | Suggested file | Chart |
 |----------------|-------|
 | `Visuals/Binomial Distribution.png` | Transaction amount histogram |
@@ -376,8 +371,8 @@ No chart image files have been verified in the repository, so none are embedded 
 
 ```python
 import os
-os.makedirs("images", exist_ok=True)
-plt.savefig("images/amount_histogram.png", dpi=200, bbox_inches="tight")
+os.makedirs("Visuals", exist_ok=True)
+plt.savefig("Visuals/Binomial Distribution.pn", dpi=200, bbox_inches="tight")
 ```
 
 before `plt.show()`, then re-run the cell.
